@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C76D7860ACCDA972DB1CF595F987F56B866FC3D5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8FF597AA09322DD1859B7BFA51AE0A02345E1583" : 0,
+    "C76D7860ACCDA972DB1CF595F987F56B866FC3D5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DB3230D0-FD14-43EA-92AA-AE6B81CF03AD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8FF597AA09322DD1859B7BFA51AE0A02345E1583" : "",
+    "C76D7860ACCDA972DB1CF595F987F56B866FC3D5" : "Calculater\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Calculater",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Calculater.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/younglicode\/Lemon-Tree.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8FF597AA09322DD1859B7BFA51AE0A02345E1583"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/younglicode\/Calculater.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C76D7860ACCDA972DB1CF595F987F56B866FC3D5"
+    }
+  ]
+}
