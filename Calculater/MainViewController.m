@@ -105,7 +105,7 @@ static BOOL equalClick = NO; // 等号按钮是否被点击过
         case 10:
             
             // 数字+/-键盘的点击方法
-            self.YLLabel.text = [NSString stringWithFormat:@"%.8f",(0 - [self.YLLabel.text doubleValue])];
+            self.YLLabel.text = [NSString stringWithFormat:@"%.2f",(0 - [self.YLLabel.text doubleValue])];
             break;
         
         case 40:
@@ -190,7 +190,7 @@ static BOOL equalClick = NO; // 等号按钮是否被点击过
         case 20:
             // 百分号按钮的点击方法
             // %.2f 保留小数点后两位数。模运算（取余运算只能两边都是整数才可以运算）
-            self.YLLabel.text = [NSString stringWithFormat:@"%.8f",[self.YLLabel.text doubleValue] * 0.001];
+            self.YLLabel.text = [NSString stringWithFormat:@"%.2f",[self.YLLabel.text doubleValue] * 0.001];
             break;
          
         case 70:
@@ -264,7 +264,7 @@ static BOOL equalClick = NO; // 等号按钮是否被点击过
 #pragma mark - 重写answerNum的set方法，当answerNum被赋值的时候，同时给YLLabel赋值
 -(void)setAnswerNum:(double)answerNum{
     _answerNum = answerNum;
-    self.YLLabel.text = [self deleteZero:[NSString stringWithFormat:@"%f",_answerNum]];
+    self.YLLabel.text = [self deleteZero:[NSString stringWithFormat:@"%.8f",_answerNum]];
     equalClick = YES;
 }
 
@@ -272,8 +272,7 @@ static BOOL equalClick = NO; // 等号按钮是否被点击过
 - (NSString *)deleteZero:(NSString *)String{
     
     if ([String rangeOfString:@"."].length ) {
-        NSLog(@"%@",String);
-        for (int i = 0 ; i < String.length; i++) {
+        for (int i = 0 ; i < String.length + 1; i++) {
             // 取出最后的一个字符
             char s = [String characterAtIndex:(String.length-1)];
             // 判断最后一个字符
