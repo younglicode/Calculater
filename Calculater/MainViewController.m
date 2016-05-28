@@ -47,7 +47,7 @@
 #pragma mark - 创建YLLabel
 - (void)creatYLLabel{
 
-    UILabel *YLLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, ((KH - (KW/4)*5) - 180), KW - 10,180)];
+    UILabel *YLLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, ((KH - (KW/4)*5) - 140), KW - 10,140)];
     YLLabel.backgroundColor = [UIColor colorFromHexCode:@"F2E8B5"];
     YLLabel.numberOfLines = 0;
     YLLabel.layer.cornerRadius = 15;
@@ -77,7 +77,7 @@
         [YLBtn setBackgroundColor:[UIColor colorFromHexCode:@"F2E8B5"]];
         [YLBtn setTitle:self.keyboardTextArr[i] forState:UIControlStateNormal];
         [YLBtn setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-        YLBtn.titleLabel.font = [UIFont systemFontOfSize:40.0];
+        YLBtn.titleLabel.font = [UIFont systemFontOfSize:30.0];
         YLBtn.layer.cornerRadius = 15;
         YLBtn.clipsToBounds = YES;
         YLBtn.tag = i * 10;
